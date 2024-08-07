@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Change Notice Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Engineering Change Notice (ECN) Form</h1>
+        <form id="ecnForm" action="/submit" method="POST">
+            <label for="ecnNumber">ECN Number:</label>
+            <input type="text" id="ecnNumber" name="ecnNumber" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+<div>
+            <label>Type of ECN:</label> 
+          
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="flexCheckDefault" type="checkbox" name="ecnType" value="internal">
+                Internal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+            
+               <input id="flexCheckDefaul" type="checkbox" name="ecnType" value="customer">
+                Customer Raised 
+            
+        
+            
+
+              <label for="affectedItems"> Header:</label>
+            <input type="text" id="affectedItems" name="affectedItems" placeholder="List affected items..." required>
+
+            <label for="description">Change Description:</label>
+            <textarea id="description" name="description" rows="4" required
+                placeholder="Describe the change..."></textarea>
+
+            <label for="reason">Reason for Change:</label>
+            <textarea id="reason" name="reason" rows="4" required
+                placeholder="Explain the reason for the change..."></textarea>
+
+            
+
+            <label for="implementationDate">Implementation Date:</label>
+            <input type="date" id="implementationDate" name="implementationDate" required>
+
+            <label for="recoveryamount">Recovery amount:</label>
+            <input type="text" id="recoveryamount" name="recoveryamount" required>
+
+            <label for="approver">Approval Authority</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="1">Engineering Team</option>
+                <option value="2">Design Lead</option>
+                <option value="3">Head (ECR generate)</option>
+                <option value="4">PE</option>
+                <option value="5">Project Management </option>
+                <option value="6">Tooling</option>
+            </select>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile02">Attach a document</label>
+                <input type="file" class="form-control" id="inputGroupFile02">
+                
+              </div>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional comments..."></textarea>
+
+            <button id="download-form" type="submit">Submit ECN</button>
+            <button type="button"  class="btn btn-outline-primary" >
+                Download form as PDF
+            </button>
+        </form>
+    </div>
+  
+    
+</body>
+
+</html>
