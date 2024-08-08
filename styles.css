@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    background: url("image.png") no-repeat;
+    background: url("/ECN_DEMO_WEB/image.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
